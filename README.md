@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Dress Inventory Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Dress Inventory Management System is a comprehensive solution for managing the inventory, sales, and rentals of dresses and accessories in an online store. It offers a range of features to streamline operations, including branch management, access control, product management, rent tracking, and inventory monitoring. The system is built using modern web technologies to ensure efficiency and scalability.
 
-## Available Scripts
+## Technologies Used
+- **Frontend**:
+  - React.js
+  - Material-UI (MUI)
+  - CSS
 
-In the project directory, you can run:
+- **Backend**:
+  - Node.js
+  - Express.js
+  - Sequelize (ORM for MySQL)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Branch Management
+- **Description**: Oversees diverse store branches with dedicated administrators and sellers.
+- **Functionality**:
+  - Creation, modification, and deletion of store branches.
+  - Assignment of dedicated administrators and sellers to each branch.
+  - Management of branch-specific information and settings.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Access Control
+- **Description**: Implements roles with specific permissions for administrators and sellers to ensure secure control.
+- **Functionality**:
+  - Role-based access control (RBAC) system to restrict access to certain features and data.
+  - Creation and management of roles (e.g., admin, seller).
+  - Assignment of permissions to roles.
 
-### `npm test`
+### Product Management
+- **Description**: Allows the addition, updating, and removal of dresses and accessories for both selling and renting.
+- **Functionality**:
+  - CRUD operations for products (dresses and accessories).
+  - Categorization and tagging of products for better organization.
+  - Support for managing product availability and pricing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Rent Management
+- **Description**: Tracks customer rentals, including duration, due dates, and return status.
+- **Functionality**:
+  - Recording and monitoring of rental transactions.
+  - Calculation of rental duration and due dates.
+  - Status tracking for rented items (e.g., rented, overdue, returned).
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Inventory Tracking
+- **Description**: Monitors inventory to prevent overbooking and ensure product availability.
+- **Functionality**:
+  - Real-time tracking of product inventory across branches.
+  - Alerting system for low stock or out-of-stock items.
+  - Integration with other modules to update inventory based on sales and rentals.
